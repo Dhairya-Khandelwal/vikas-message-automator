@@ -1,0 +1,4 @@
+# Replace with your domain, point its DNS A record to your server IP.
+app.yourdomain.com {
+    reverse_proxy 127.0.0.1:3000
+}

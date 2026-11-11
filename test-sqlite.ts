@@ -1,0 +1,1 @@
+import { DatabaseSync } from "node:sqlite"; const d = new DatabaseSync(":memory:"); d.exec("SELECT 1");

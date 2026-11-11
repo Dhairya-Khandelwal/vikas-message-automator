@@ -1,0 +1,6 @@
+{
+  "name": "Vikas Message Automator",
+  "description": "Professional WhatsApp Business messaging, CRM, and automation suite for Vikas Automobiles, HP Lube Distributor & C&F Agent, Satna MP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

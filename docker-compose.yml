@@ -1,0 +1,15 @@
+services:
+  automator:
+    build: .
+    # To use the prebuilt image from GitHub Packages instead of building:
+    # image: ghcr.io/dhairya-khandelwal/vikas-message-automator:latest
+    container_name: vikas-automator
+    restart: unless-stopped
+    ports:
+      # Bound to localhost only; put Caddy / Cloudflare Tunnel in front for HTTPS
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - .env
+    volumes:
+      # Keeps WhatsApp login + database safe across rebuilds/restarts
+      - ./data:/app/data

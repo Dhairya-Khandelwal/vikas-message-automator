@@ -1,0 +1,1111 @@
+# MASTER DEVELOPMENT PROMPT — VIKAS MESSAGE AUTOMATOR
+
+Act as a senior full-stack software engineer, UI/UX designer, database architect and automation specialist.
+
+Build a complete, functional, professional WhatsApp Business messaging and customer-management application named:
+
+# VIKAS MESSAGE AUTOMATOR
+
+The application is for **Vikas Automobiles, Satna, Madhya Pradesh, India**.
+
+The most important requirement is that I want to connect my existing WhatsApp Business account by scanning a QR code through WhatsApp Business → Linked Devices.
+
+## 1. NON-NEGOTIABLE COST REQUIREMENTS
+
+I have a strict zero-budget requirement.
+
+I will NOT:
+- Purchase WhatsApp Cloud API access.
+- Purchase Meta API services.
+- Buy any third-party WhatsApp API.
+- Pay for monthly subscriptions.
+- Purchase paid hosting or cloud databases.
+- Pay for paid automation platforms.
+- Provide credit card details.
+- Purchase paid AI services.
+
+I can only provide access to my existing WhatsApp Business account through WhatsApp Web QR scanning.
+
+The software should run locally on my Windows 10/11 computer.
+
+Use free and open-source technologies wherever possible.
+
+**Important technical instruction:**
+
+Investigate the available WhatsApp connection methods before implementing the integration.
+
+WhatsApp Web QR automation may require unofficial libraries and may carry account restriction or disconnection risks. It is not an officially guaranteed free WhatsApp API.
+
+- Do not falsely describe unofficial integrations as official Meta integrations.
+- Do not create a fake QR code or fake connected status.
+- Do not claim a message was sent unless the connection reports success.
+- Clearly disclose the limitations and account risks of any unofficial QR-based integration.
+- Do not bypass WhatsApp security, authentication, anti-spam systems or restrictions.
+- If a safe, supported QR connection is unavailable, provide a clear explanation and keep the rest of the application fully functional in DEMO mode.
+- Do not automatically switch to a paid API.
+
+Keep the WhatsApp integration modular so it can be replaced in the future.
+
+## 2. TECHNOLOGY STACK
+
+Build a complete full-stack application using:
+
+Frontend:
+- React
+- TypeScript
+- Tailwind CSS
+- Modern responsive components
+- Lucide icons
+- Recharts for analytics
+
+Backend:
+- Node.js
+- Express.js
+- TypeScript
+
+Database:
+- SQLite
+- Prisma ORM
+
+Additional:
+- Local file storage
+- Local background job scheduler
+- Persistent message queue
+- Local authentication
+- CSV and Excel import/export
+- Local backup and restore
+
+Avoid:
+- Firebase dependency
+- Supabase dependency
+- Paid hosting
+- Paid database services
+- Paid third-party messaging gateways
+- Paid AI API dependencies
+
+Use a clean modular architecture.
+
+## 3. BUSINESS INFORMATION
+
+Use the following business information throughout the application.
+
+Business Name: VIKAS AUTOMOBILES
+
+Business Type: HP LUBE DISTRIBUTOR & C&F AGENT
+
+Location: Satna, Madhya Pradesh, India
+
+Contact Number: 9827003016
+
+Target customers:
+- Retailers
+- Mechanics
+- Workshops
+- Automobile dealers
+- Distributors
+- Industrial customers
+- Individual vehicle owners
+
+The application should be branded as Vikas Message Automator.
+
+## 4. PROFESSIONAL UI DESIGN
+
+Create a premium, modern SaaS-style dashboard.
+
+Design requirements:
+- Clean professional interface
+- Responsive desktop and mobile layout
+- Dark navy sidebar
+- White/light dashboard background
+- Blue accent colour
+- Modern cards
+- Rounded corners
+- Professional charts
+- Smooth transitions
+- Proper spacing and typography
+- Searchable tables
+- Confirmation dialogs
+- Toast notifications
+- Loading indicators
+- Empty states
+- Error states
+
+Do not create a basic or outdated admin panel.
+
+The interface should feel like a professionally developed commercial software product.
+
+## 5. SIDEBAR NAVIGATION
+
+Create the following sections:
+
+1. Dashboard
+2. WhatsApp Connection
+3. Message Inbox
+4. Contacts
+5. Contact Groups
+6. Consent Manager
+7. Auto Replies
+8. Keyword Automation
+9. Follow-up Sequences
+10. Bulk Campaigns
+11. Message Templates
+12. Automation Builder
+13. Message History
+14. Smart Message Pacing
+15. Account Health
+16. Analytics & Reports
+17. Team Management
+18. Backup & Restore
+19. Settings
+20. Help & Support
+
+Every section must work. Do not create buttons or menu items that lead nowhere.
+
+## 6. DASHBOARD
+
+Create a complete dashboard showing:
+
+Customer statistics:
+- Total contacts
+- Opted-in customers
+- Pending consent
+- Opted-out customers
+- Customer groups
+
+Messaging statistics:
+- Total messages sent
+- Incoming messages
+- Outgoing messages
+- Delivered messages
+- Read messages
+- Failed messages
+- Scheduled messages
+
+Automation statistics:
+- Active automation rules
+- Active follow-up sequences
+- Pending follow-ups
+- Active campaigns
+- Paused campaigns
+
+Account information:
+- WhatsApp connection status
+- Connected number, when available
+- Message queue status
+- Account health status, when verifiable
+- Current pacing mode
+- Next scheduled message
+
+Include:
+- Weekly messaging chart
+- Campaign performance chart
+- Recent activity
+- Recent conversations
+- Pending tasks
+- Important alerts
+
+Never display fake production statistics. Use clearly labelled DEMO data only in demo mode.
+
+## 7. WHATSAPP QR CONNECTION
+
+This is the most important module.
+
+Create a dedicated WhatsApp Connection page.
+
+Interface should contain:
+
+- Connect WhatsApp button
+- QR code display area
+- Connection status
+- Linked phone number
+- Last connected time
+- Last successful synchronization
+- Disconnect button
+- Reconnect button
+- Connection error display
+
+Expected workflow:
+
+1. User clicks Connect WhatsApp.
+2. Application initializes the selected connection adapter.
+3. If QR-based linking is supported, generate and display the real QR code.
+4. User scans it using WhatsApp Business → Linked Devices.
+5. Application verifies the connection.
+6. Display the actual connection status.
+7. Start synchronization only after successful connection.
+
+Connection states:
+- Disconnected
+- Initializing
+- Waiting for QR scan
+- Connecting
+- Connected
+- Reconnecting
+- Authentication expired
+- Connection error
+
+Technical requirements:
+
+- Investigate the feasibility of a local QR-based WhatsApp Web integration.
+- If an unofficial integration is used, clearly disclose that fact and its risks.
+- Never fake QR generation, pairing, connection or message delivery.
+- Never use stolen sessions, scraped credentials or hidden browser automation.
+- Store session data securely on the local computer.
+- Provide a clear logout and session deletion function.
+- Handle connection loss and reconnect attempts safely.
+- Keep all connection code separate from the CRM and campaign modules.
+
+Do not use a paid API as a fallback.
+
+If no usable QR integration can be implemented, create a working DEMO connection mode and explain what is unavailable.
+
+## 8. MESSAGE INBOX
+
+Build a WhatsApp-style inbox.
+
+Features:
+- Conversation list
+- Customer name and number
+- Profile image when available
+- Incoming messages
+- Outgoing messages
+- Message timestamps
+- Delivery status where available
+- Read status where available
+- Search conversations
+- Search message content
+- Send text messages
+- Attach images and documents where supported
+- Customer notes
+- Assign conversation to team member
+- Mark conversation as resolved
+- Filter unread conversations
+
+The inbox must clearly distinguish real WhatsApp messages from DEMO messages.
+
+## 9. CONTACT MANAGEMENT / CRM
+
+Create a complete customer database.
+
+Contact fields:
+
+- Customer name
+- WhatsApp number
+- Business name
+- City
+- Customer category
+- Product interest
+- Customer notes
+- Tags
+- Consent status
+- Consent date
+- Consent source
+- Consent evidence
+- Last interaction
+- Created date
+
+Customer categories:
+
+- Retailers
+- Mechanics
+- Workshops
+- Automobile Dealers
+- Distributors
+- Industrial Customers
+- Individual Customers
+- Other
+
+Features:
+
+- Add contact
+- Edit contact
+- Delete contact
+- Search contacts
+- Filter contacts
+- Bulk import
+- CSV import
+- Excel import
+- CSV export
+- Excel export
+- Duplicate detection
+- Contact groups
+- Customer tags
+- Customer history
+
+Important:
+
+Importing a phone number must NEVER automatically mean the customer has given promotional consent.
+
+All imported contacts should initially receive the consent status NOT_GIVEN unless verifiable consent evidence is imported.
+
+## 10. CONTACT GROUPS
+
+Allow customers to be grouped by category.
+
+Examples:
+
+- All Retailers
+- All Mechanics
+- Workshops
+- Dealers
+- Distributors
+- Industrial Customers
+- Individual Customers
+- New Customers
+- Regular Customers
+- Opted-in Customers
+
+Features:
+- Create groups
+- Edit groups
+- Delete groups
+- Add/remove contacts
+- Import contacts into groups
+- Filter contacts by group
+- Select multiple groups for campaigns
+
+Always exclude opted-out and ineligible contacts from promotional campaigns.
+
+## 11. CONSENT MANAGER
+
+Build a complete customer permission management system.
+
+This is a mandatory module.
+
+Each contact must have one of these statuses:
+
+- OPTED_IN
+- PENDING
+- NOT_GIVEN
+- OPTED_OUT
+- EXPIRED
+- BLOCKED
+
+Store:
+
+- Customer name
+- WhatsApp number
+- Consent status
+- Consent date and time
+- Consent source
+- Consent evidence
+- Consent wording version
+- Permission categories
+- Last reminder date
+- Opt-out date
+- Opt-out source
+- Review date, if applicable
+
+### Consent collection
+
+Provide a consent registration page with an unchecked checkbox.
+
+Use this wording:
+
+"I agree to receive promotional updates, product availability information, offers and business communications from Vikas Automobiles through WhatsApp. I understand that I can withdraw my consent at any time."
+
+Allow consent collection through:
+- Website form
+- QR-code consent form
+- In-store registration
+- Customer registration
+- Recorded customer permission
+- Supported WhatsApp opt-in interactions
+
+Opening a consent form must NOT activate consent.
+
+Only an explicit customer action can activate consent.
+
+### Consent reminder system
+
+Create a consent review timer.
+
+Day 0:
+- Check whether valid permission exists.
+- If permission is missing, block promotional messaging.
+
+Day 3:
+- Show an administrator reminder for pending consent.
+
+Day 7:
+- Mark the consent invitation as inactive.
+- Do not automatically opt the customer in.
+- Do not repeatedly send consent requests to non-responders.
+
+The timer is for administrative tracking. It must never override consent requirements.
+
+### Automatic opt-out detection
+
+Detect messages such as:
+
+- STOP
+- UNSUBSCRIBE
+- CANCEL
+- NO MORE
+- REMOVE
+- OPT OUT
+
+When a customer sends an opt-out message:
+
+1. Immediately change the status to OPTED_OUT.
+2. Cancel scheduled promotional messages.
+3. Cancel pending promotional follow-ups.
+4. Exclude the customer from future marketing campaigns.
+5. Record date and time.
+6. Record opt-out source.
+7. Add the number to a permanent suppression list until a new valid opt-in is recorded.
+8. Send one appropriate confirmation where permitted.
+
+A customer can receive promotional messages again only after providing new valid consent.
+
+### Mandatory backend enforcement
+
+Every promotional message must pass through the backend consent verification service.
+
+Check consent:
+- When creating a campaign
+- When scheduling a campaign
+- Immediately before sending each message
+
+If consent data is missing, unavailable or cannot be verified, BLOCK the promotional message.
+
+Do not allow employees to override an opt-out.
+
+Order updates and support messages must be categorized separately. Transactional communication must not be used as a disguise for advertising.
+
+## 12. AUTO REPLIES
+
+Create automatic reply functionality.
+
+Allow administrators to configure:
+
+- Welcome message
+- Greeting
+- Business introduction
+- Working hours
+- Away message
+- Default reply
+- Customer support reply
+
+Example:
+
+HI:
+"Hello! Welcome to Vikas Automobiles, Satna. How can we help you?"
+
+HELLO:
+"Welcome to Vikas Automobiles. We deal in HP lubricants for various automotive and industrial applications."
+
+PRICE:
+"Please tell us which lubricant or product you require so that our team can assist you."
+
+CATALOGUE:
+"Thank you for your interest. Please let us know which product category you are looking for."
+
+DEALER:
+"Thank you for your dealership enquiry. Please share your business name and location."
+
+LOCATION:
+"Vikas Automobiles, Satna. For assistance, contact 9827003016."
+
+SUPPORT:
+"Thank you for contacting Vikas Automobiles. Our team will assist you shortly."
+
+ORDER:
+"Please share the product name, quantity and delivery location."
+
+Allow:
+- Enable/disable
+- Edit responses
+- Add new replies
+- Set working hours
+- Set response priority
+- Prevent duplicate responses
+- Escalate to human support
+
+## 13. KEYWORD AUTOMATION
+
+Build a rule-based automation engine.
+
+Trigger:
+- Incoming message
+- Specific keyword
+- Exact match
+- Partial match
+- Case-insensitive match
+
+Actions:
+- Send reply
+- Add contact
+- Update contact details
+- Add tag
+- Add to group
+- Notify administrator
+- Create follow-up task
+- Assign conversation
+
+Example:
+
+IF incoming message contains PRICE
+THEN send price enquiry response
+AND add PRICE_ENQUIRY tag
+AND notify administrator.
+
+Allow users to create, edit, delete, prioritize, pause and resume rules.
+
+## 14. FOLLOW-UP SEQUENCES
+
+Create a flexible follow-up automation system.
+
+Example sequence:
+
+- First message: Immediate
+- Second follow-up: 24 hours later
+- Third follow-up: After 3 days
+- Fourth follow-up: After 7 days
+
+Allow administrators to customize:
+
+- Delay
+- Date
+- Time
+- Message template
+- Target group
+- Follow-up sequence
+- Active/inactive status
+
+Important rules:
+
+- Cancel marketing follow-ups when the customer replies, opts out or withdraws consent.
+- Recheck consent before every promotional message.
+- Avoid duplicate follow-ups.
+- Respect applicable WhatsApp messaging policies and template requirements.
+- Do not send promotional messages when the applicable messaging window or permission requirements are not met.
+
+## 15. BULK CAMPAIGN MANAGER
+
+Build a complete campaign manager.
+
+Features:
+
+- Create campaign
+- Campaign name
+- Select customer groups
+- Select individual contacts
+- Import CSV
+- Select message template
+- Add message content
+- Personalize messages
+- Schedule campaign
+- Pause campaign
+- Resume campaign
+- Cancel campaign
+- View progress
+- View results
+- Export campaign report
+
+Personalization variables:
+
+- {{name}}
+- {{city}}
+- {{business}}
+- {{product}}
+
+Show a preview before sending.
+
+### Campaign safety screen
+
+Before execution, display:
+
+- Total selected contacts
+- Valid opted-in contacts
+- Pending consent contacts
+- Opted-out contacts
+- Invalid numbers
+- Duplicate numbers
+- Blocked contacts
+- Template approval requirements, where applicable
+- Applicable WhatsApp messaging restrictions
+- Estimated cost, if a verified cost applies
+
+Only eligible contacts can receive promotional messages.
+
+Never send promotional messages to every imported contact automatically.
+
+Require administrator confirmation before launching a campaign.
+
+Recheck consent and eligibility immediately before each send.
+
+## 16. MESSAGE TEMPLATES
+
+Create editable templates for:
+
+- Product availability
+- New lubricant launch
+- Dealer offers
+- Mechanic promotions
+- Customer follow-ups
+- Order confirmation
+- Payment reminders
+- Festival greetings
+- Product enquiry
+- Business introduction
+- Customer support
+
+Allow:
+- Create
+- Edit
+- Delete
+- Duplicate
+- Preview
+- Save
+- Categorize
+- Personalize
+
+Where the selected connection method supports template restrictions, display and enforce those restrictions accurately.
+
+Do not falsely label an ordinary WhatsApp Web message as a Meta-approved template.
+
+## 17. SMART MESSAGE PACING ENGINE
+
+Create an intelligent automatic message scheduling system.
+
+The purpose is to manage message queues responsibly and reduce operational errors.
+
+Important:
+
+No delay guarantees that WhatsApp will not restrict an account. Never describe any timing as guaranteed safe or as a way to bypass WhatsApp restrictions.
+
+Create three modes:
+
+1. AUTO MODE
+2. MANUAL MODE
+3. PAUSED MODE
+
+Default mode: AUTO.
+
+### AUTO MODE
+
+Automatically manage local scheduling based on:
+
+- Connection status
+- Available verified sending capacity
+- Current queue
+- Previous errors
+- Local campaign settings
+- Message eligibility
+- Applicable platform limits
+- Account health information, if genuinely available
+
+Do not invent official sending limits or account quality information.
+
+If the selected WhatsApp connection does not expose official capacity or account quality, show UNKNOWN instead of guessing.
+
+### MANUAL MODE
+
+Allow the administrator to configure local operational limits:
+
+- Minimum interval between queued operations
+- Batch size
+- Pause between batches
+- Local daily campaign cap
+- Working hours
+
+Clearly label these as local application settings, NOT official WhatsApp sending allowances.
+
+### PAUSED MODE
+
+Stop all queued promotional sending.
+
+Allow administrators to resume after reviewing account status and campaign eligibility.
+
+### Queue system
+
+Use persistent SQLite storage.
+
+Every message must contain:
+
+- Unique message ID
+- Customer ID
+- Campaign ID
+- Message category
+- Scheduled timestamp
+- Status
+- Retry count
+- Connection response
+- Failure reason
+
+Statuses:
+
+- PENDING
+- SCHEDULED
+- PROCESSING
+- SENT
+- DELIVERED
+- READ
+- FAILED
+- CANCELLED
+- PAUSED
+
+Prevent duplicate sending using unique identifiers and idempotency checks.
+
+### Error handling
+
+Implement:
+
+- Connection lost: pause affected operations.
+- Authentication error: stop and require administrator action.
+- Invalid recipient: mark failed; do not repeatedly retry.
+- Permanent send failure: stop retrying.
+- Temporary error: retry only when appropriate.
+- Account warning: pause affected campaigns and alert administrator.
+- Restriction or sending prohibition: stop affected sending immediately.
+
+Never use account rotation, artificial device activity, randomized human-like behaviour or multiple devices to evade restrictions.
+
+### Smart pacing dashboard
+
+Show:
+
+- Current mode
+- Current local scheduling interval
+- Queue size
+- Next scheduled operation
+- Last successful send
+- Failed messages
+- Paused campaigns
+- Current connection status
+- Reason for automatic pause or adjustment
+
+## 18. ACCOUNT HEALTH MONITOR
+
+Create an account health page.
+
+Show only information that the integration can actually verify.
+
+Indicators:
+
+- Connection status
+- Authentication status
+- Recent connection failures
+- Message failures
+- Queue status
+- Active campaigns
+- Paused campaigns
+- Last successful message
+- Warnings
+
+Health states:
+
+GREEN:
+No detected operational issue.
+
+YELLOW:
+Potential issue or warning; reduce or pause affected operations as appropriate.
+
+RED:
+Serious restriction, authentication problem or sending prohibition; stop affected operations.
+
+UNKNOWN:
+The integration cannot verify account health.
+
+Never fabricate WhatsApp quality ratings, account limits, delivery status or official restrictions.
+
+## 19. AUTOMATION BUILDER
+
+Create a visual rule builder.
+
+Allow administrators to create:
+
+TRIGGER → CONDITION → ACTION
+
+Example:
+
+Trigger:
+Customer sends PRICE.
+
+Condition:
+Customer is a new contact.
+
+Actions:
+- Save contact.
+- Add PRICE_ENQUIRY tag.
+- Send an appropriate reply.
+- Notify administrator.
+
+Allow multiple conditions and actions.
+
+Include enable, disable, edit, delete and test functions.
+
+## 20. ANALYTICS AND REPORTS
+
+Create professional analytics.
+
+Show:
+
+- Total contacts
+- New customers
+- Customer category distribution
+- Campaign performance
+- Messages sent
+- Messages delivered, where verifiable
+- Messages read, where verifiable
+- Failed messages
+- Incoming messages
+- Customer response rate
+- Follow-up performance
+- Automation performance
+- Consent statistics
+
+Provide:
+- Date filters
+- Group filters
+- Campaign filters
+- CSV export
+- Excel export
+
+Do not present simulated statistics as real statistics.
+
+## 21. TEAM MANAGEMENT
+
+Create basic user management.
+
+Roles:
+
+ADMIN:
+Full access.
+
+MANAGER:
+Campaigns, contacts, analytics and automation management.
+
+EMPLOYEE:
+Inbox, customer details and assigned conversations.
+
+Only administrators can:
+- Change critical settings
+- Manage consent overrides or corrections with documented evidence
+- Change connection settings
+- Restore backups
+- Configure sending limits
+
+No user role can override an opt-out without a new valid customer opt-in.
+
+## 22. SETTINGS
+
+Create settings for:
+
+- Business information
+- WhatsApp connection
+- Local database
+- Working hours
+- Default replies
+- Message pacing
+- Consent management
+- Notifications
+- User accounts
+- Security
+- Backup schedule
+- Application appearance
+
+## 23. BACKUP AND RESTORE
+
+Create a local backup system.
+
+Features:
+
+- Manual backup
+- Automatic local backup
+- Backup database
+- Backup uploaded media
+- Backup templates
+- Backup consent records
+- Backup campaign information
+- Restore backup
+- Backup history
+
+Store backup files in a user-selected local folder.
+
+Do not upload customer information to external servers.
+
+## 24. SECURITY
+
+Implement:
+
+- Secure admin login
+- Password hashing
+- Local session authentication
+- Role-based permissions
+- Backend validation
+- Rate limiting for application endpoints
+- Secure local storage
+- Audit logs
+- Protection against duplicate actions
+- Safe file upload validation
+- Secure error handling
+
+Never expose sensitive connection credentials to frontend code.
+
+Never store passwords in plain text.
+
+Fail closed if the consent database or verification service is unavailable.
+
+## 25. WINDOWS INSTALLATION
+
+The application must run on Windows 10 and Windows 11.
+
+Provide:
+
+- install.bat
+- start.bat
+- stop.bat
+- backup.bat
+- README.md
+- .env.example
+- Database migrations
+- Restore instructions
+
+Expected workflow:
+
+1. Download the application folder.
+2. Run install.bat.
+3. Required free dependencies install locally.
+4. Run start.bat.
+5. Open the application in the browser.
+
+Preferred local address:
+
+http://localhost:3000
+
+The app should not require a paid cloud server or paid hosting.
+
+The local computer must remain running for local scheduled tasks to execute.
+
+Explain that public Meta webhooks, if ever used, require a publicly reachable HTTPS endpoint. Do not make them a hidden requirement for the local QR-based workflow.
+
+## 26. DEMO MODE
+
+Build a fully functional DEMO mode.
+
+The user must be able to test:
+
+- Dashboard
+- CRM
+- Contacts
+- Contact groups
+- Consent manager
+- Auto replies
+- Keyword automation
+- Follow-up sequences
+- Campaign creation
+- Smart pacing
+- Message queue
+- Analytics
+- Reports
+- Backup and restore
+
+Use sample contacts and messages, clearly marked DEMO.
+
+DEMO mode must never send real WhatsApp messages.
+
+Provide a Reset Demo Data option.
+
+## 27. TESTING REQUIREMENTS
+
+Test the following:
+
+1. Application installation.
+2. Local login.
+3. Contact creation.
+4. Contact import.
+5. Duplicate detection.
+6. Group management.
+7. Consent verification.
+8. Opt-out detection.
+9. Campaign creation.
+10. Campaign cancellation.
+11. Automatic follow-ups.
+12. Queue persistence after application restart.
+13. Smart pacing.
+14. Temporary error handling.
+15. Permanent error handling.
+16. Connection loss.
+17. Backup and restore.
+18. Role-based permissions.
+19. DEMO mode.
+20. QR connection, if genuinely implemented.
+
+Mandatory consent tests:
+
+- Contact without consent must be blocked from promotional messaging.
+- Contact with valid consent may be eligible.
+- Opted-out contact must be blocked.
+- Imported contact must default to NOT_GIVEN.
+- Scheduled campaign must recheck consent at send time.
+- Database failure must block promotional sending.
+- New explicit consent must update the record with evidence.
+
+## 28. DEVELOPMENT INSTRUCTIONS
+
+Do not just generate a static UI or a frontend prototype.
+
+Build the actual working application.
+
+Use a proper project structure:
+
+- frontend
+- backend
+- database
+- services
+- integrations
+- automation
+- scheduler
+- queue
+- components
+- pages
+- utils
+- tests
+
+Use reusable components.
+
+Use proper database relations.
+
+Implement real CRUD operations.
+
+Connect frontend controls to backend functionality.
+
+Do not use fake buttons.
+
+Do not use hardcoded production statistics.
+
+Do not leave critical functions as TODO placeholders.
+
+If a feature cannot be implemented because of WhatsApp technical or policy limitations, explain that limitation honestly and implement the remaining local functionality.
+
+## 29. FINAL EXPECTED RESULT
+
+Deliver a working Windows application called:
+
+**VIKAS MESSAGE AUTOMATOR**
+
+It should provide:
+
+- Local customer CRM
+- WhatsApp QR connection workflow
+- WhatsApp-style inbox
+- Contact groups
+- Consent management
+- Automatic replies
+- Keyword automation
+- Follow-up sequences
+- Bulk campaign manager
+- Message templates
+- Smart automatic pacing
+- Account health monitoring
+- Analytics
+- Team management
+- Local backup and restore
+
+My primary objective is to manage Vikas Automobiles' customer communication through my existing WhatsApp Business account without purchasing an API or subscription.
+
+Prioritize zero recurring software costs, local data storage, transparency, customer consent and reliable operation.
+
+**Start by generating the complete project structure and implementing the application module by module. Do not stop after creating the dashboard.**
